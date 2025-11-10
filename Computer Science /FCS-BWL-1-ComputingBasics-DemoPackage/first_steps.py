@@ -1,7 +1,7 @@
 # Python Crash Course Result
 
 def greet_user(uname):
-	if (uname == 'Jack'):
+	if (uname == 'Jean-Luc'):
 		print('Howdy', uname)
 	else:
 		print('Hallo', uname)
@@ -11,3 +11,4 @@ while counter < 5:
 	username = input('Enter your name!')
 	greet_user(username)
 	counter = counter + 1
+greet_user ('Jean-Luc')
