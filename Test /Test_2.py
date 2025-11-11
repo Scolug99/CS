@@ -1,5 +1,5 @@
 import streamlit as st
-from Feature_01 import return_even
+from Feature_01 import return_even,return_odd
 
 original_list = [i for i in range (10)]
 
