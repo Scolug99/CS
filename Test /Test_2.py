@@ -10,3 +10,10 @@ st.write('hooray, we made it')
 st.write('Hello, world')
 
 st.write(even_list)
+
+def addition(a,b):
+    return a + b
+A=2
+B=3
+
+st.write(addition(A,B))
