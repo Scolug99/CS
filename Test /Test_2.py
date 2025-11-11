@@ -1,11 +1,15 @@
 import streamlit as st
 from Feature_01 import return_even,return_odd
+import time
 
 original_list = [i for i in range (10)]
 
-even_list = return_even(original_list)
-
-odd_list = return_odd(original_list)
+with st.spinner('Computing even and odd lists...'):
+    # simulate work (optional)
+    time.sleep(0.5)
+    even_list = return_even(original_list)
+    odd_list = return_odd(original_list)
+    st.success('Computed lists')
 
 st.write('hooray, we made it')
 
@@ -20,4 +24,9 @@ def addition(a,b):
 A=2
 B=3
 
-st.write(addition(A,B))
+with st.spinner('Calculating addition...'):
+    time.sleep(0.2)
+    result = addition(A,B)
+    st.success('Done')
+
+st.write(result)
